@@ -1,6 +1,3 @@
-@Ledger.Api_HostAddress = http://localhost:5226
-
-GET {{Ledger.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+@Ledger.Api_HostAddress = http://localhost:5000
 
 ###
