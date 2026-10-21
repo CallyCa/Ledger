@@ -100,7 +100,43 @@ Por padrão, a API estará disponível em:
 
 ## Banco de dados
 
-A configuração de conexão, o modelo de dados e as migrações ainda serão definidos conforme a arquitetura e os requisitos funcionais forem estabelecidos.
+O PostgreSQL pode ser iniciado com Docker Compose a partir da raiz do repositório.
+
+Crie o arquivo `.env` local a partir do exemplo:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Inicie o banco de dados em segundo plano:
+
+```powershell
+docker compose up -d
+```
+
+Parâmetros de conexão a partir da máquina local:
+
+| Parâmetro | Valor |
+|---|---|
+| Host | `localhost` |
+| Porta | `5432` |
+| Banco de dados | `ledgerdb` |
+| Usuário | `admin` |
+| Senha | valor de `POSTGRES_PASSWORD` no arquivo `.env` |
+
+Para verificar os containers em execução:
+
+```powershell
+docker compose ps
+```
+
+Para interromper os containers sem remover os dados:
+
+```powershell
+docker compose down
+```
+
+O arquivo `.env` é local e não deve ser versionado. Consulte `.env.example` para os parâmetros necessários.
 
 ## Arquitetura
 
