@@ -64,7 +64,8 @@ dotnet run --project src/Ledger.Api/Ledger.Api.csproj
 
 Por padrão, a API estará disponível em:
 
-- HTTPS: `https://localhost:5000`
+- HTTP: `https://localhost:5226`
+- HTTPS: `https://localhost:7167`
 
 
 ## Estrutura de diretórios
