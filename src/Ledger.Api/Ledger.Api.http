@@ -2,3 +2,5 @@
 @Ledger.Api_HttpsHostAddress = https://localhost:7167
 
 ###
+
+GET {{Ledger.Api_HttpsHostAddress}}/openapi/v1.json

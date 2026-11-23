@@ -10,7 +10,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql
     ports:
-      - "${POSTGRES_PORT:?POSTGRES_PORT must be defined. Copy .env.example to .env}:5432"
+      - "127.0.0.1:${POSTGRES_PORT:?POSTGRES_PORT must be defined. Copy .env.example to .env}:5432"
 
 volumes:
   pgdata:  

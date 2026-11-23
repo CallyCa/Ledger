@@ -59,7 +59,7 @@ dotnet test Ledger.slnx
 A partir da raiz do repositório:
 
 ```powershell
-dotnet run --project src/Ledger.Api/Ledger.Api.csproj
+dotnet run --project src/Ledger.Api/Ledger.Api.csproj --launch-profile https
 ```
 
 Por padrão, a API estará disponível em:
@@ -119,7 +119,7 @@ Parâmetros de conexão a partir da máquina local:
 
 | Parâmetro | Valor |
 |---|---|
-| Host | `localhost` |
+| Host | `127.0.0.1` |
 | Porta | `5432` |
 | Banco de dados | `ledgerdb` |
 | Usuário | `admin` |
